@@ -19,8 +19,8 @@ def load_embedding_model():
 
 
 @st.cache_resource(show_spinner="🔄 Loading FAISS index...")
-def load_faiss_index():
-    return faiss.read_index("faiss_product_index.index")
+def load_faiss_index() -> faiss.Index:
+    return faiss.read_index("faiss_product_index.index")  # type: ignore
 
 
 @st.cache_data(show_spinner="🔄 Loading product catalog...")

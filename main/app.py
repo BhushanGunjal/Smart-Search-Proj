@@ -25,7 +25,10 @@ if user_query:
             col1, col2, col3 = st.columns([4, 2, 2])
             col1.markdown(f"**{item['item'].title()}**")
             col2.markdown(f"{item['purchase_quantity']}")
-            col3.button("Find Products", key=item["item"])
+            # col3.button("Find Products", key=item["item"])
+            search_query = item["item"].replace(" ", "+")
+            google_url = f"https://www.google.com/search?q={search_query}"
+            col3.markdown(f"[🔎 Find on Google]({google_url})", unsafe_allow_html=True)
 
 
 

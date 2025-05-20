@@ -1,7 +1,7 @@
 langchain_openai
 openai
 python-dotenv
-langchain-core
+langchain
 langchain_huggingface
 pandas
 openpyxl

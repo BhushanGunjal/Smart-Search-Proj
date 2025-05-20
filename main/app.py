@@ -5,7 +5,7 @@ from product_search import match_shopping_plan_to_products
 
 st.set_page_config(page_title="Smart Assistant", layout="centered")
 
-st.title("🧠 Smart Bazaar Assistant")
+st.title("Smart Bazaar Assistant")
 
 
 user_query = st.text_input("What do you want to prepare or shop for?", placeholder="e.g., Upma for 2 people")

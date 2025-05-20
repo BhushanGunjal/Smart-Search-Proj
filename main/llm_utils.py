@@ -2,12 +2,11 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 import json
+import os
+from langchain_openai import ChatOpenAI
 
-# Load environment variables from .env file
-load_dotenv()
+llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-# Initialize the OpenAI model   
-llm = ChatOpenAI()
 
 from langchain.prompts import PromptTemplate
 

@@ -49,13 +49,3 @@ if user_query:
 
 
 
-
-
-
-
-
-# # Step 2: Simulate product search page
-# if "search_term" in st.session_state:
-#     st.subheader(f"🔍 Products for: {st.session_state['search_term']}")
-#     # You’ll replace this with FAISS results later
-#     st.write("➡️ (Here you'd show product cards from FAISS search)")
